@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MobiDOT</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.cdnfonts.com/css/dot-matrix" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>MobiDOT</h1>
+    </nav>
+
+    <main>
+        <div class="tabnav">
+            <span tab="0" class="active"><span class="mdi mdi-pencil"></span>Bitmap mode</span>
+            <span tab="1"><span class="mdi mdi-menu"></span>Other modes</span>
+        </div>
+        <div class="tab" id="0">
+            <div id="pixels">
+            </div>
+
+            <div class="buttons">
+                <button id="clear"><span class="mdi mdi-delete"></span>Clear</button>
+                <button id="fill"><span class="mdi mdi-format-color-fill"></span>Fill</button>
+                <button id="invert"><span class="mdi mdi-invert-colors"></span>Invert</button>
+                <button id="send"><span class="mdi mdi-send"></span>Send</button>
+            </div>
+        </div>
+
+        <div class="tab hidden" id="1">
+            idk
+        </div>
+
+        <div class="buttons">
+            <button id="toggle"><span class="mdi mdi-television-ambient-light"></span>Toggle Light</button>
+        </div>
+    </main>
+
+    <footer>
+        MobiDOT Embedded Webserver v0.1<br>
+        Arne van Iterson, 2023
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
